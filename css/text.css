@@ -1,0 +1,46 @@
+h1,
+.h1 {
+  margin: 0;
+  *font-size: 16px;
+  font-size: 1.7rem;
+}
+h2,
+.h2 {
+  *font-size: 12px;
+  font-size: 1.5rem;
+}
+h3,
+.h3 {
+  *font-size: 10px;
+  font-size: 1.4rem;
+}
+h4,
+.h4 {
+  *font-size: 8px;
+  font-size: 1.2rem;
+}
+body {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Alegreya Sans', cursive;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: 'Alegreya Sans', cursive;
+}
+/**************** TEXT *************************************/
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: center;
+}
+.text-bold {
+  font-weight: bold;
+}

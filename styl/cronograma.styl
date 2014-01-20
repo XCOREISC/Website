@@ -1,0 +1,68 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+
+.cronograma
+	display block
+	& tbody
+		display block
+		width 100%
+	& h2
+		display block
+		padding (BASE_SPACE/2) 0
+		color COLOR_WHITE
+		background-color COLOR_THEME
+	& table
+		text-align center
+		display block
+		background-color COLOR_WHITE
+		& tr 
+			display: block
+			font-size 0
+			border-bottom 0.1rem solid COLOR_THEME
+			&:first-child
+				border-top 0.1rem solid COLOR_THEME
+			&:nth-child(4) td:nth-child(2)
+				position relative
+				& a
+					color COLOR_DARK
+				&:after
+					font-family "FontAwesome"
+					content: "\f055"
+					color COLOR_WHITE 
+					text-shadow 0 0 2px COLOR_DARK
+					position absolute
+					font-size 2rem
+					top 0
+					right .5rem
+			&:nth-child(6)
+				& td
+					&:nth-child(1)
+						position relative
+						top 5rem
+					&:nth-child(2),&:nth-child(3)
+						border-bottom 0.1rem solid COLOR_THEME
+					&:nth-child(3),&:nth-child(4)
+						margin-left 15%
+					&:nth-child(3),&:nth-child(4)
+						display block
+					&:nth-child(3)
+						&:after
+							content "Culmina a las 18:00hrs"
+							color COLOR_THEME
+					&:nth-child(4)
+						&:after
+							content "Culmina a las 19:30hrs"
+							color COLOR_THEME
+					&:nth-child(2),&:nth-child(3),&:nth-child(4)
+						border-left 0.1rem solid COLOR_THEME
+		& td
+			padding (BASE_SPACE/2) 0
+			font-size BASE_SPACE
+			&:first-child
+				color COLOR_THEME
+				display inline-block
+				width 15%
+			&:nth-child(2)
+				display inline-block
+				width 85%
+				border-left 0.1rem solid COLOR_THEME

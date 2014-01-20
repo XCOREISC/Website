@@ -1,0 +1,212 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+.sub-item
+	display block
+	block-center()
+	border-top .1rem solid COLOR_RED
+	border-bottom .1rem solid COLOR_RED
+	background-repeat no-repeat
+	background-position center
+	padding .2rem 0
+	width 14rem
+.header-logo
+	display block
+	width 10rem
+	block-center()
+.bck-item
+	background-image url("../images/bg-main.jpg")
+	text-transform uppercase
+	position relative
+	&> h2
+		padding 1rem 0
+		background-color rgba(0,0,0,.5)
+.titulo > .row
+	display none
+.arrow-item
+	transition all 0.5s ease
+	position absolute
+	top .5rem
+	right 1rem
+.rotate-arrow
+	transform rotate(90deg)
+.rotate-arrow2
+	transform rotate(-90deg)
+.lazo
+	position relative
+	top 5rem
+	height 2.3rem
+	border-top .3rem solid COLOR_YELLOW
+	border-bottom .3rem solid COLOR_YELLOW
+	z-index 2
+	&:before
+		content ""
+		position relative
+		top -.3rem
+		block-center()
+		display block
+		height 2.6rem
+		width 9rem
+.fix-ribbon
+	position relative
+	top 4rem
+	width 100%
+.ribbon
+	display block
+	block-center()
+	width 124%
+	height 2.2rem
+	position relative
+	top 3.6rem
+	left -12%
+	padding .1rem 0
+	border-top .3rem solid COLOR_YELLOW
+	border-bottom .3rem solid COLOR_YELLOW
+	z-index 3
+	border-radius .2rem
+	&:before,&:after
+		content ""
+		position absolute
+		top 1.9rem
+		display block
+		border-width .8rem
+		border-style solid
+	&:before
+		left 0
+		border-color COLOR_BLACK COLOR_BLACK transparent  transparent 
+	&:after
+		right 0
+		border-color COLOR_BLACK transparent transparent COLOR_BLACK 
+.logo-main
+	display block
+	width 20rem
+	block-center()
+	position relative
+	top -2rem
+	z-index 4
+.bck-cctr
+	background-image url("../images/bg-main.jpg")
+.bck-blur
+	background-image url("../images/bg-blur.jpg")
+	background-size cover
+.bck-cctr-2
+	background-image url("../images/bg-main-2.jpg")
+.bck-cctr-bg
+	background-image url("../images/bg-main.png")
+
+.bck-local-noche
+	background-image url("../images/bg-local-noche.jpg")
+	background-position center
+	background-repeat no-repeat
+.bck-medalla
+	display block
+	background-image url("../images/bg-medalla.png")
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	square(6.5rem)
+	position absolute
+	z-index 3
+	right 1rem
+	top 2.5rem
+.bck-local-dia
+	background-image url("../images/bg-local-dia.png")
+	background-position center
+	background-repeat no-repeat
+
+.bck-button-nav
+	square(3rem)
+	margin .5rem
+	background-image url("../images/bg-nav.png")
+	background-repeat no-repeat
+	background-size cover
+.bck-cctr-lazo
+	display block
+	background-image url("../images/bg-lazo.png")
+	position center 
+	width 101px
+	height 25px
+	block-center()
+.nav-social
+	font-size 0
+	& a
+		text-align center
+		display inline-block
+		font-size 1.5rem
+		margin-left 1.5rem
+		&:first-child
+			margin-left :.5rem
+	&.header 
+		position absolute
+		width 100%
+		left 0
+		top 5.3rem
+		z-index 3
+		text-align left
+	&.footer
+		text-align center
+		padding 1rem 0
+		& a 
+			font-size 2rem
+			padding-top .4rem
+			square(3.5rem)
+			border-radius 50%
+			border .1rem solid COLOR_WHITE
+.circle
+	font-size 2rem
+	padding-top .4rem
+	square(3.5rem)
+	border-radius 50%
+	background-color rgba(255,255,255,.2)
+	border .1rem solid COLOR_WHITE
+.absolute
+	position absolute
+.radius-0110
+	border-radius 0 .2rem .2rem 0
+.radius-1001
+	border-radius .2rem .0 0 .2rem
+.img-full
+	display block
+	width 18rem
+	block-center()
+.bck-frame
+	position relative
+.list-cctr
+	position absolute
+	bottom 0
+	left 0
+	padding 0 1rem
+	z-index 2
+	color COLOR_WHITE
+	clearfix() 
+	width 100%
+	& li
+		display block
+		background-color rgba(0,0,0,.5)
+		float left 
+		text-align center
+		width 25%
+		padding .5rem 0
+		white-space:nowrap
+		overflow hidden
+		text-overflow: ellipsis
+/********* maps ******/
+#map-cctr
+	height 20rem
+	width 100%
+.gmnoprint
+	& a, span
+		display none 
+/******* open contents ******/
+.openContent
+	display none
+.cliente
+	& img
+		display block
+		block-center()
+		square(8rem)
+		border-radius 50%
+		border .1rem solid COLOR_WHITE
+	& blockquote
+		margin-top .5rem
+		width 100%
+		border-radius 1rem

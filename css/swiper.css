@@ -1,0 +1,123 @@
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+}
+.swiper-container.main {
+  width: 100%;
+}
+.swiper-container.eventos {
+  height: 16rem;
+}
+.swiper-container.h13 {
+  height: 13rem;
+}
+.arrow {
+  z-index: 3;
+  position: absolute;
+  top: 10rem;
+  z-index: 2;
+  font-size: 3rem;
+}
+.arrow.left {
+  left: 1rem;
+}
+.arrow.right {
+  right: 1rem;
+}
+.arrow.left-service,
+.arrow.right-service {
+  background-color: rgba(0,0,0,0.5);
+  color: #731314;
+  top: 35%;
+  font-size: 2.5rem;
+}
+.arrow.left-service {
+  left: 3rem;
+  width: 3rem;
+  height: 3rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  border: 0.2rem solid #731314;
+  padding-right: 0.2rem;
+}
+.arrow.right-service {
+  right: 3rem;
+  width: 3rem;
+  height: 3rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  border: 0.2rem solid #731314;
+}
+.img-slider {
+  position: relative;
+  max-width: 100%;
+}
+.pagination-vertical {
+  position: absolute;
+  width: 2rem;
+  text-align: center;
+  z-index: 3;
+  left: 1rem;
+  top: 1rem;
+}
+.swipe-vertical {
+  position: absolute;
+  background-image: url("../images/swipe_horizontal.png");
+  background-position: center;
+  background-color: rgba(0,0,0,0.5);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 17rem;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -ms-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+/*
+	&:before
+		content ""
+		display block
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 17rem*/
+}
+/* Specify Swiper's Size:
+
+/*width:200px;
+height: 100px
+*/
+/* Specify Slides's Size:
+	
+/*width: 100%;
+height: 100%
+
+.swiper-slide-active 
+/* Specific active slide styling:
+	
+
+.swiper-slide-visible 
+/* Specific visible slide styling: 
+
+
+/* ===============================================================
+Pagination Styles
+================================================================*/
+/* Stylize pagination button: 
+
+
+.swiper-active-switch 
+/* Specific active button style: 
+	
+.swiper-visible-switch 
+/* Specific visible button style: 
+*/

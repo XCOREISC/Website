@@ -1,0 +1,56 @@
+/*
+<div class="checkbox-2">
+ 	<input type="checkbox" id="ejemplo-2" value="1" name="" />
+	<label for="ejemplo-2"></label>
+</div>
+
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+.checkbox-2 {
+	width: 200px;
+	height: 40px;
+	background: #664477;
+	margin: 0 40px;
+	border-radius: 50px;
+	position: relative;
+}
+.checkbox-2:before {
+	content: 'Sí';
+	position: absolute;
+	top: 0;
+	left: 20px;
+	color: #19DD89;
+	font-size: 20px;
+  line-height: 40px;
+  text-shadow: 0 0 2px #FFFFFF;
+}
+.checkbox-2:after {
+	content: 'No';
+  color: #BCB589;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	font-size: 20px;
+  line-height: 40px;
+  text-shadow: 0 0 1px #000000;
+}
+.checkbox-2 label { 
+	background: #BCB589;
+	display: block;
+	width: 75px;
+	height: 22px;
+	border-radius: 50px;
+	transition: all .7s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 9px;
+	z-index: 1;
+	left: 10px;
+}
+.checkbox-2 input[type=checkbox]:checked + label {
+	left: 115px;
+	background: #19DD89;
+}
+*/

@@ -1,0 +1,55 @@
+.logo-xcoreisc {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 15%;
+}
+header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 21;
+}
+.nav-main {
+  position: relative;
+  height: 100%;
+}
+.nav-main > a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nav-main > a:first-child {
+  padding: 0;
+}
+.nav-main > a svg {
+  display: block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;
+  fill: #fff;
+}
+.nav-main > a:hover {
+  background-color: #fff;
+  color: #036;
+}
+.nav-main > a:hover svg {
+  fill: #036;
+}
+.bck-twitter {
+  background-color: #55acee;
+}

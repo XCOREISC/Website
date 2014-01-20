@@ -1,0 +1,62 @@
+// vendor prefixes, thanks Stylus
+/* http://learnboost.github.io/stylus/docs/interpolation.html */ 
+
+//schema of all prefixes
+vendor(prop,arguments)
+	-webkit-{prop} arguments
+	-moz-{prop} arguments
+	-ms-{prop} arguments
+	-o-{prop} arguments
+	{prop} arguments
+
+// Propertys and values(arguments)
+box-sizing()
+	vendor('box-sizing', arguments)
+backface-visibility()
+	vendor('backface-visibility', arguments)
+perspective()
+	vendor('perspective', arguments)
+text-size-adjust()
+	vendor('text-size-adjust',arguments)
+hyphens()
+	vendor('hyphens', arguments)
+word-break()
+	vendor('word-break', arguments)
+	
+border-radius()
+	vendor('border-radius', arguments)
+box-shadow()
+	vendor('box-shadow', arguments)
+tab-size()
+	vendor('tab-size', arguments)
+
+
+// Propertys and values(arguments)
+animation-name()
+	vendor('animation-name',arguments)
+animation-duration()
+	vendor('animation-duration',arguments)
+animation-fill-mode()
+	vendor('animation-fill-mode',arguments)
+transition()
+	vendor('transition', arguments)
+transition-delay()
+	vendor('transition-delay', arguments)
+transform()
+	vendor('transform',arguments)
+transform-origin()
+	vendor('transform-origin',arguments)
+animation-timing-function()
+	vendor('animation-timing-function',arguments)
+transform-style()
+	vendor('transform-style', arguments)
+//http://caniuse.com/#feat=css-filters
+filter() //This css property is only supported in -webkit- engine for now
+	-webkit-filter : arguments
+	filter: arguments
+backface-visibility() 
+	vendor('backface-visibility',arguments)
+// only Opera not supported
+backface-visibility()
+	vendor('backface-visibility', arguments)
+

@@ -1,0 +1,99 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+.swiper-container 
+	position relative
+	overflow hidden
+	&.main
+		width 100%
+	&.eventos
+		height 16rem
+	&.h13
+		height 13rem
+.arrow
+	z-index 3
+	position absolute
+	top 10rem
+	z-index 2
+	font-size 3rem
+	&.left
+		left 1rem
+	&.right
+		right 1rem
+	&.left-service,&.right-service
+		background-color rgba(0,0,0,.5)
+		color COLOR_RED
+		top 35%
+		font-size 2.5rem
+	&.left-service
+		left 3rem
+		square(3rem)
+		border-radius 50%
+		text-align center
+		border .2rem solid COLOR_RED
+		padding-right .2rem
+	&.right-service
+		right 3rem
+		square(3rem)
+		border-radius 50%
+		text-align center
+		border .2rem solid COLOR_RED
+.img-slider 
+	position: relative
+	max-width: 100%
+.pagination-vertical
+	position: absolute
+	width 2rem
+	text-align center
+	z-index: 3
+	left: 1rem
+	top: 1rem
+.swipe-vertical
+	position absolute
+	background-image url("../images/swipe_horizontal.png")
+	background-position center
+	background-color rgba(0,0,0,.5)
+	background-repeat no-repeat
+	width 100%
+	height 17rem
+	transition all 2s ease-out
+	/*
+	&:before
+		content ""
+		display block
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 17rem*/
+/* Specify Swiper's Size:
+
+/*width:200px;
+height: 100px
+*/
+//.swiper-slide 
+/* Specify Slides's Size:
+	
+/*width: 100%;
+height: 100%
+
+.swiper-slide-active 
+/* Specific active slide styling:
+	
+
+.swiper-slide-visible 
+/* Specific visible slide styling: 
+
+
+/* ===============================================================
+Pagination Styles
+================================================================*/
+//.swiper-pagination-switch 
+/* Stylize pagination button: 
+
+
+.swiper-active-switch 
+/* Specific active button style: 
+	
+.swiper-visible-switch 
+/* Specific visible button style: 
+*/

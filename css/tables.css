@@ -1,0 +1,26 @@
+#gallery-pics {
+  height: auto !important;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  position: relative;
+}
+.swipe-wrap:before,
+.swipe-wrap:after {
+  content: " ";
+  display: table;
+}
+.swipe-wrap:after {
+  clear: both;
+}
+.swipe-wrap > picture {
+  float: left;
+  position: relative;
+}
+.swipe-wrap > picture img {
+  width: 100%;
+}

@@ -1,0 +1,70 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+
+.navbar
+	width 100%
+	position relative
+span
+	&.band
+		 position fixed 
+		 display none
+		&:target + .tab > div 
+			opacity: 1
+			background-color: COLOR_WHITE
+		&:target + .tab a 
+			z-index: 3
+
+.tab 
+	position relative
+	& > a
+		float: left
+		width: 25%
+		background-color COLOR_THEME
+		border-top .1rem solid COLOR_WHITE
+		border-bottom .1rem solid COLOR_WHITE
+		border-right .1rem solid COLOR_WHITE
+		padding .25rem 0
+		text-decoration: none
+		font-size: 2rem
+		color: COLOR_WHITE
+		text-align: center
+		position: relative
+		transition: all .5s ease
+		cursor pointer
+		z-index: 3
+		&:nth-of-type(4)
+			border-right none
+	& >div 
+		background-color: COLOR_WHITE
+		width: 100%
+		position: absolute
+		border-radius 0 0 .25rem  .25rem 
+		top: 2.5rem
+		left: 0
+		opacity:0
+		transition: all 1s ease
+		& > p 
+			padding (BASE_SPACE/2) BASE_SPACE
+		&.info
+			text-align justify
+		&.gallery,&.videos
+			padding 0 
+			font-size 0
+			& img
+				width (100/3)%
+				display inline-block
+		&.place
+			padding 0 
+			& #map-unprg
+				width 100%
+				min-height 12rem
+				overflow: visible !important
+				z-index 2
+				& .gmnoprint
+					& a
+						display none
+			& address
+				text-align center
+				font-weight bold
+		&.social
+			position: relative

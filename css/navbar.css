@@ -1,0 +1,95 @@
+.navbar {
+  width: 100%;
+  position: relative;
+}
+span.band {
+  position: fixed;
+  display: none;
+}
+span.band:target + .tab > div {
+  opacity: 1;
+  background-color: #fff;
+}
+span.band:target + .tab a {
+  z-index: 3;
+}
+.tab {
+  position: relative;
+}
+.tab > a {
+  float: left;
+  width: 25%;
+  background-color: #036;
+  border-top: 0.1rem solid #fff;
+  border-bottom: 0.1rem solid #fff;
+  border-right: 0.1rem solid #fff;
+  padding: 0.25rem 0;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 3;
+}
+.tab > a:nth-of-type(4) {
+  border-right: none;
+}
+.tab >div {
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  -webkit-border-radius: 0 0 0.25rem 0.25rem;
+  -moz-border-radius: 0 0 0.25rem 0.25rem;
+  -ms-border-radius: 0 0 0.25rem 0.25rem;
+  -o-border-radius: 0 0 0.25rem 0.25rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+  top: 2.5rem;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.tab >div > p {
+  padding: 0.5rem 1rem;
+}
+.tab >div.info {
+  text-align: justify;
+}
+.tab >div.gallery,
+.tab >div.videos {
+  padding: 0;
+  font-size: 0;
+}
+.tab >div.gallery img,
+.tab >div.videos img {
+  width: 33.333333333333336%;
+  display: inline-block;
+}
+.tab >div.place {
+  padding: 0;
+}
+.tab >div.place #map-unprg {
+  width: 100%;
+  min-height: 12rem;
+  overflow: visible !important;
+  z-index: 2;
+}
+.tab >div.place #map-unprg .gmnoprint a {
+  display: none;
+}
+.tab >div.place address {
+  text-align: center;
+  font-weight: bold;
+}
+.tab >div.social {
+  position: relative;
+}

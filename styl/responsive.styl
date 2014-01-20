@@ -1,0 +1,139 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+html 
+	font-size:60%
+@media only screen and (min-width: 307px) 
+	.arrow.left-service,.arrow.right-service
+		top 9.5rem
+@media only screen and (min-width: 320px) 
+	.swiper-container.service
+		width 285px 
+		height 154px
+	// Iconos soaciales en header
+	.nav-social.header a:first-child
+		margin-left 3rem
+	// alto slider ultimos eventos
+	.swiper-container.eventos
+		height 17rem
+@media only screen and (min-width: 480px)
+	/******* +1  ******/
+	// Iconos soaciales en header
+	.nav-social.header a:first-child
+		margin-left 4rem
+	// alto slider ultimos eventos
+	.swiper-container.eventos
+		height 31rem
+	.sm 
+		float left 
+		width 50%
+		&.box
+			& h2
+				border none
+			& p
+				color COLOR_WHITE
+				margin-top 1rem
+			& .historia
+				background-image url("../images/bg-main.jpg")
+				& a.button
+					color COLOR_RED
+					background-image url("../images/bg-main-2.jpg")
+			& .cotiza
+				background-image url("../images/bg-main-2.jpg")
+				h2
+					background-image none
+					color COLOR_RED
+				& p
+					color COLOR_RED
+
+@media only screen and (min-width: 600px)
+	.titulo > .row
+		display block
+	.arrow-item
+		display none
+/********************* sm  *************/
+@media only screen and (min-width: 700px)
+	html 
+		font-size: 70%  /* 14px */
+	.swiper-container.service
+		margin-top 4rem
+	.bck-frame:before
+		content ""
+		position absolute
+		background url("../images/bg-frame.png") no-repeat center
+		width 100%
+		height 214px
+		top 2.5rem
+		left 0
+		z-index 2
+		pointer-events none
+	.swiper-container.service
+		margin-top 3.4rem
+	/******* +2  ******/
+	//Fix ultimos eventos
+	.clear-sm 
+		clear both
+	// alto slider ultimos eventos
+	.swiper-container.eventos
+		height 25rem
+	// Iconos soaciales en header
+	.nav-social.header a:first-child
+		margin-left 6rem
+	// Arrows mini sliders	 
+	.arrow.left-service,.arrow.right-service
+		top 8.5rem
+/********************* md  *************/
+@media only screen and (min-width: 1100px) 
+	html 
+		font-size: 75%
+	.sm 
+		width 33.33333333333333%
+	/******* +3  ******/
+	/*
+	.ultimos-eventos
+		background-image none
+		border-top .1rem solid COLOR_RED
+		border-bottom .1rem solid COLOR_RED
+		padding .2rem 0
+		width 22rem
+		color COLOR_RED
+		block-center()
+		font-size:1.5rem*/
+	// Arrows mini sliders	 
+	.arrow.left-service,.arrow.right-service
+		top 7.5rem
+	.nav-social.header a:first-child
+		margin-left 9rem	
+	.clear-sm 
+		clear none
+
+	/***************** desktop**************/
+	.button.nav
+		display none	
+	.outer-nav
+		position relative
+		clearfix()
+		width 100%
+		&.vertical
+			top 0
+			transform:none
+		& a
+			float left
+			width 20%
+			transform none
+			margin: 0
+			text-align center
+		&.left 
+			left 0
+		&.right 
+			right 0
+	.effect-airbnb .outer-nav a
+		opacity 1
+		transform none
+/********************* lg *************/
+@media only screen and (min-width: 1440px) 
+	html 
+		font-size: 85%
+	.swiper-container.service
+		margin-top 2.9rem
+	.sm 
+		width 50%

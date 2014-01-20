@@ -1,0 +1,58 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+/*********************** BODY********************************/
+body
+	position relative
+	left 0
+	transition left 0.2s ease
+/*********************** Button ***********************************************/
+#showMenu
+	transition all ease 0.2s
+	position: fixed
+	left 0
+	border-radius 0 0 .25rem 0
+	z-index 4
+	font-size 1.5rem
+	text-decoration none
+	padding-top .4rem
+	text-align center
+	border .1rem solid COLOR_WHITE
+	border-radius .4rem
+/******************* navigation ***************/
+.menu 
+	position fixed
+	overflow-x scroll
+	width wNav
+	height 100%
+	top 0
+	z-index 4
+	left -(wNav)
+	text-shadow -(BASE_SPACE) 0 BASE_SPACE -(BASE_SPACE) rgba(0, 0, 0, 0.25) inset
+	transition  all 0.2s ease
+	&:after
+		content ""
+		position absolute
+		height 100%
+		top 0
+		right 0
+		display block
+		box-shadow 3rem 0 2rem 4rem rgba(0,0,0,0.75), 1rem 0 1rem 3rem transparent, 40px 30px 50px transparent, -40px 30px transparent, -40px -30px 50px transparent
+	& > a 
+		display  block
+		padding-left  1rem
+		border-bottom  .1rem solid COLOR_WHITE
+		line-height  2
+		text-decoration none
+		font-size 1.2rem
+		&:first-child
+			border-top  .1rem solid COLOR_WHITE
+
+.menu-open
+	left 0
+.body-toright
+	left wNav
+.button-nav
+	left wNav !important
+
+.rotate-arrow-open
+	transform rotate(180deg)

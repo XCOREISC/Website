@@ -1,0 +1,92 @@
+/*********************** BODY********************************/
+body {
+  position: relative;
+  left: 0;
+  -webkit-transition: left 0.2s ease;
+  -moz-transition: left 0.2s ease;
+  -ms-transition: left 0.2s ease;
+  -o-transition: left 0.2s ease;
+  transition: left 0.2s ease;
+}
+/*********************** Button ***********************************************/
+#showMenu {
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  -ms-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  position: fixed;
+  left: 0;
+  -webkit-border-radius: 0 0 0.25rem 0;
+  -moz-border-radius: 0 0 0.25rem 0;
+  -ms-border-radius: 0 0 0.25rem 0;
+  -o-border-radius: 0 0 0.25rem 0;
+  border-radius: 0 0 0.25rem 0;
+  z-index: 4;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding-top: 0.4rem;
+  text-align: center;
+  border: 0.1rem solid #fff;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+/******************* navigation ***************/
+.menu {
+  position: fixed;
+  overflow-x: scroll;
+  width: 14rem;
+  height: 100%;
+  top: 0;
+  z-index: 4;
+  left: -14rem;
+  text-shadow: -1rem 0 0rem rgba(0,0,0,0.25) inset;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.menu:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: block;
+  -webkit-box-shadow: 3rem 0 2rem 4rem rgba(0,0,0,0.75), 1rem 0 1rem 3rem transparent, 40px 30px 50px transparent, -40px 30px transparent, -40px -30px 50px transparent;
+  -moz-box-shadow: 3rem 0 2rem 4rem rgba(0,0,0,0.75), 1rem 0 1rem 3rem transparent, 40px 30px 50px transparent, -40px 30px transparent, -40px -30px 50px transparent;
+  -ms-box-shadow: 3rem 0 2rem 4rem rgba(0,0,0,0.75), 1rem 0 1rem 3rem transparent, 40px 30px 50px transparent, -40px 30px transparent, -40px -30px 50px transparent;
+  -o-box-shadow: 3rem 0 2rem 4rem rgba(0,0,0,0.75), 1rem 0 1rem 3rem transparent, 40px 30px 50px transparent, -40px 30px transparent, -40px -30px 50px transparent;
+  box-shadow: 3rem 0 2rem 4rem rgba(0,0,0,0.75), 1rem 0 1rem 3rem transparent, 40px 30px 50px transparent, -40px 30px transparent, -40px -30px 50px transparent;
+}
+.menu > a {
+  display: block;
+  padding-left: 1rem;
+  border-bottom: 0.1rem solid #fff;
+  line-height: 2;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.menu > a:first-child {
+  border-top: 0.1rem solid #fff;
+}
+.menu-open {
+  left: 0;
+}
+.body-toright {
+  left: 14rem;
+}
+.button-nav {
+  left: 14rem !important;
+}
+.rotate-arrow-open {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}

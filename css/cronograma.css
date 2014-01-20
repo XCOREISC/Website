@@ -1,0 +1,85 @@
+.cronograma {
+  display: block;
+}
+.cronograma tbody {
+  display: block;
+  width: 100%;
+}
+.cronograma h2 {
+  display: block;
+  padding: 0.5rem 0;
+  color: #fff;
+  background-color: #036;
+}
+.cronograma table {
+  text-align: center;
+  display: block;
+  background-color: #fff;
+}
+.cronograma table tr {
+  display: block;
+  font-size: 0;
+  border-bottom: 0.1rem solid #036;
+}
+.cronograma table tr:first-child {
+  border-top: 0.1rem solid #036;
+}
+.cronograma table tr:nth-child(4) td:nth-child(2) {
+  position: relative;
+}
+.cronograma table tr:nth-child(4) td:nth-child(2) a {
+  color: #444;
+}
+.cronograma table tr:nth-child(4) td:nth-child(2):after {
+  font-family: "FontAwesome";
+  content: "\f055";
+  color: #fff;
+  text-shadow: 0 0 2px #444;
+  position: absolute;
+  font-size: 2rem;
+  top: 0;
+  right: 0.5rem;
+}
+.cronograma table tr:nth-child(6) td:nth-child(1) {
+  position: relative;
+  top: 5rem;
+}
+.cronograma table tr:nth-child(6) td:nth-child(2),
+.cronograma table tr:nth-child(6) td:nth-child(3) {
+  border-bottom: 0.1rem solid #036;
+}
+.cronograma table tr:nth-child(6) td:nth-child(3),
+.cronograma table tr:nth-child(6) td:nth-child(4) {
+  margin-left: 15%;
+}
+.cronograma table tr:nth-child(6) td:nth-child(3),
+.cronograma table tr:nth-child(6) td:nth-child(4) {
+  display: block;
+}
+.cronograma table tr:nth-child(6) td:nth-child(3):after {
+  content: "Culmina a las 18:00hrs";
+  color: #036;
+}
+.cronograma table tr:nth-child(6) td:nth-child(4):after {
+  content: "Culmina a las 19:30hrs";
+  color: #036;
+}
+.cronograma table tr:nth-child(6) td:nth-child(2),
+.cronograma table tr:nth-child(6) td:nth-child(3),
+.cronograma table tr:nth-child(6) td:nth-child(4) {
+  border-left: 0.1rem solid #036;
+}
+.cronograma table td {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+.cronograma table td:first-child {
+  color: #036;
+  display: inline-block;
+  width: 15%;
+}
+.cronograma table td:nth-child(2) {
+  display: inline-block;
+  width: 85%;
+  border-left: 0.1rem solid #036;
+}

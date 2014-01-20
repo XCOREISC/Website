@@ -1,0 +1,76 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+fieldset,
+ul,
+ol,
+figcaption,
+figure,
+picture,
+p,
+dl,
+dd,
+dt,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+a {
+  outline: 0;
+  text-decoration: none;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  min-height: 100%;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+caption,
+p,
+table,
+textarea,
+td,
+th {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  -webkit-word-break: break-all;
+  -moz-word-break: break-all;
+  -ms-word-break: break-all;
+  -o-word-break: break-all;
+  word-break: break-all;
+  -webkit-word-break: break-word;
+  -moz-word-break: break-word;
+  -ms-word-break: break-word;
+  -o-word-break: break-word;
+  word-break: break-word;
+}

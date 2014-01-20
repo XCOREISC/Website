@@ -1,0 +1,320 @@
+.sub-item {
+  display: block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 0.1rem solid #731314;
+  border-bottom: 0.1rem solid #731314;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.2rem 0;
+  width: 14rem;
+}
+.header-logo {
+  display: block;
+  width: 10rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bck-item {
+  background-image: url("../images/bg-main.jpg");
+  text-transform: uppercase;
+  position: relative;
+}
+.bck-item> h2 {
+  padding: 1rem 0;
+  background-color: rgba(0,0,0,0.5);
+}
+.titulo > .row {
+  display: none;
+}
+.arrow-item {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+.rotate-arrow {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.rotate-arrow2 {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.lazo {
+  position: relative;
+  top: 5rem;
+  height: 2.3rem;
+  border-top: 0.3rem solid #e6bc3a;
+  border-bottom: 0.3rem solid #e6bc3a;
+  z-index: 2;
+}
+.lazo:before {
+  content: "";
+  position: relative;
+  top: -0.3rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 2.6rem;
+  width: 9rem;
+}
+.fix-ribbon {
+  position: relative;
+  top: 4rem;
+  width: 100%;
+}
+.ribbon {
+  display: block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 124%;
+  height: 2.2rem;
+  position: relative;
+  top: 3.6rem;
+  left: -12%;
+  padding: 0.1rem 0;
+  border-top: 0.3rem solid #e6bc3a;
+  border-bottom: 0.3rem solid #e6bc3a;
+  z-index: 3;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+}
+.ribbon:before,
+.ribbon:after {
+  content: "";
+  position: absolute;
+  top: 1.9rem;
+  display: block;
+  border-width: 0.8rem;
+  border-style: solid;
+}
+.ribbon:before {
+  left: 0;
+  border-color: #000 #000 transparent transparent;
+}
+.ribbon:after {
+  right: 0;
+  border-color: #000 transparent transparent #000;
+}
+.logo-main {
+  display: block;
+  width: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -2rem;
+  z-index: 4;
+}
+.bck-cctr {
+  background-image: url("../images/bg-main.jpg");
+}
+.bck-blur {
+  background-image: url("../images/bg-blur.jpg");
+  background-size: cover;
+}
+.bck-cctr-2 {
+  background-image: url("../images/bg-main-2.jpg");
+}
+.bck-cctr-bg {
+  background-image: url("../images/bg-main.png");
+}
+.bck-local-noche {
+  background-image: url("../images/bg-local-noche.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bck-medalla {
+  display: block;
+  background-image: url("../images/bg-medalla.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 6.5rem;
+  height: 6.5rem;
+  position: absolute;
+  z-index: 3;
+  right: 1rem;
+  top: 2.5rem;
+}
+.bck-local-dia {
+  background-image: url("../images/bg-local-dia.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bck-button-nav {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+  background-image: url("../images/bg-nav.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bck-cctr-lazo {
+  display: block;
+  background-image: url("../images/bg-lazo.png");
+  position: center;
+  width: 101px;
+  height: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-social {
+  font-size: 0;
+}
+.nav-social a {
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+.nav-social a:first-child {
+  margin-left: 0.5rem;
+}
+.nav-social.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 5.3rem;
+  z-index: 3;
+  text-align: left;
+}
+.nav-social.footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+.nav-social.footer a {
+  font-size: 2rem;
+  padding-top: 0.4rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 0.1rem solid #fff;
+}
+.circle {
+  font-size: 2rem;
+  padding-top: 0.4rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.2);
+  border: 0.1rem solid #fff;
+}
+.absolute {
+  position: absolute;
+}
+.radius-0110 {
+  -webkit-border-radius: 0 0.2rem 0.2rem 0;
+  -moz-border-radius: 0 0.2rem 0.2rem 0;
+  -ms-border-radius: 0 0.2rem 0.2rem 0;
+  -o-border-radius: 0 0.2rem 0.2rem 0;
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+.radius-1001 {
+  -webkit-border-radius: 0.2rem 0 0 0.2rem;
+  -moz-border-radius: 0.2rem 0 0 0.2rem;
+  -ms-border-radius: 0.2rem 0 0 0.2rem;
+  -o-border-radius: 0.2rem 0 0 0.2rem;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+.img-full {
+  display: block;
+  width: 18rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bck-frame {
+  position: relative;
+}
+.list-cctr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 1rem;
+  z-index: 2;
+  color: #fff;
+  width: 100%;
+}
+.list-cctr:before,
+.list-cctr:after {
+  content: " ";
+  display: table;
+}
+.list-cctr:after {
+  clear: both;
+}
+.list-cctr li {
+  display: block;
+  background-color: rgba(0,0,0,0.5);
+  float: left;
+  text-align: center;
+  width: 25%;
+  padding: 0.5rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/********* maps ******/
+#map-cctr {
+  height: 20rem;
+  width: 100%;
+}
+.gmnoprint a,
+.gmnoprint span {
+  display: none;
+}
+/******* open contents ******/
+.openContent {
+  display: none;
+}
+.cliente img {
+  display: block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  height: 8rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 0.1rem solid #fff;
+}
+.cliente blockquote {
+  margin-top: 0.5rem;
+  width: 100%;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+}

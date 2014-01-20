@@ -1,0 +1,21 @@
+{
+  "name": "XCOREISC",
+  "version": "0.0.1",
+  "authors": [
+    "YetsuPe <contacto@yetsu.com>"
+  ],
+  "description": "Componentes App XCOREISC",
+  "license": "MIT",
+  "homepage": "http://xcoreisc.com",
+  "dependencies": {
+    "angularjs": "*",
+    "bootstrap-sass": "~3.0.2",
+    "jquery": "~2.0.3",
+    "normalize-css": "~2.1.3"
+  },
+  "devDependencies": {
+    "swiper": "~2.4.2",
+    "jquery": "~2.0.3",
+    "verge": "~1.8.3"
+  }
+}
