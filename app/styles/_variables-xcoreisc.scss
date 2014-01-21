@@ -1,3 +1,7 @@
 /******************** VARIABLES X COREISC ***********************/
+$color-white : #ffffff;
 $color-theme : #023467;
+$color-theme-glass : rgba(0,51,102,0.5);
+$color-theme-dark : darken( $color-theme, 5% );
+$color-dark  : darken($color-theme, 10%);
 $base-rem : 1rem;

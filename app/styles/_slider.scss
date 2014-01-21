@@ -56,17 +56,19 @@
 .seven_container .seven_slider {
   display: none;
 }
+/**************************** COMENTARIO SLIDE ************************************/
 .seven_container .seven_slide_title {
   position: absolute;
-  font-size: 1rem !important;
-  text-align: center;
-  background-color: rgba(0,51,102,0.3);
+  font-size: 2rem !important;
+  text-align: justify;
+  background-color: $color-theme-glass ;
   bottom: 4rem;
   left: 4rem;
   color: #000;
   padding: 1rem 2rem 1rem 2rem;
-  width: 50rem;
+  width: 60rem;
   color: #ffffff;
+  text-shadow: 1px 1px 1px $color-theme;
 }
 .seven_container .seven_nav {
   z-index: 40;
@@ -76,10 +78,6 @@
   text-indent: -10000px;
   cursor: pointer;
   opacity: 0.5;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
   display: none;
 }
@@ -87,12 +85,8 @@
   opacity: 0.1;
 }
 .seven_container .seven_nav:hover {
-  -webkit-transition: opacity 0s ease-in-out;
-  -moz-transition: opacity 0s ease-in-out;
-  -ms-transition: opacity 0s ease-in-out;
-  -o-transition: opacity 0s ease-in-out;
   transition: opacity 0s ease-in-out;
-  opacity: 1;
+  opacity: .7;
 }
 .seven_container #right_btn {
   background-position: 100% 0;
@@ -411,7 +405,7 @@
   height: 80px;
   background-image: url("../images/slider-icons/fullwidth.png");
   top: 50%;
-  left: 0;
+  left: 4rem;
   margin-top: -40px;
 }
 .seven_fullwidth #right_btn {
@@ -419,7 +413,7 @@
   height: 80px;
   background-image: url("../images/slider-icons/fullwidth.png");
   top: 50%;
-  right: 0;
+  right: 4rem;
   margin-top: -40px;
 }
 .seven_fullwidth .seven_hcarousel {

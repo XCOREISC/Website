@@ -1,5 +1,11 @@
-h1,h2,h3{
+h1,h2,h3,h4,blockquote,time{
 	margin:0;
+}
+blockquote{
+	font-style:italic;
+	font-size:2rem;
+	border:none;
+	padding:0;
 }
 a{
 	text-decoration:none;
@@ -7,3 +13,11 @@ a{
 figure{
 	display: block;
 }
+
+*{
+	box-sizing:  border-box;
+	&:before,&:after {
+		box-sizing:  border-box;
+	}
+}
+	

@@ -1,0 +1,124 @@
+<div class="col-md-2 bck-theme-dark border-right position-fixed second-nav">
+
+	<h2 class="color-white padding-top-2 padding-bottom-2 padding-left-3">Info</h2><hr/>
+	<h3 class="color-white padding-top padding-bottom padding-left-3">Categorias</h3><hr/>
+	<nav class="nav categories">
+		<a href="" class="display-blog padding text-left">Presentación</a>
+		<a href="" class="display-blog padding text-left">Equipo</a>
+		<a href="" class="display-blog padding text-left">Misión y visión</a>
+		<a href="" class="display-blog padding text-left">Ubicación</a>
+		<!--<a href="" class="display-blog padding text-left">Galería</a>-->
+	</nav>
+</div>
+<div class="col-md-14 col-md-push-2 bck-dark">
+	<div class="row">
+		<div class="col-md-6 padding-2 color-white text-justify box-description">
+			<figure class="col-lg-16 bck-theme-dark">
+				<figcaption>
+					<h4 class="text-center padding-top padding-bottom"> Descripción </h4><hr/>
+					<p class="padding">
+						El Décimo Congreso Regional de Estudiantes de Ingeniería de Sistemas 
+						y Computación - X COREISC, denominado "Emprendimiento en Innovación Tecnológica del Perú para el Mundo",
+						tiene como principal finalidad promover la investigación y la actitud emprendedora en los participantes.
+					</p>
+					<p class="padding">
+						Este evento es organizado en conjunto con la Asociación Peruana de Ingeniería de Sistemas y Computación (APEISC)
+						y la Universidad Nacional Pedro Ruíz Gallo, quienes traen consigo novedades como: 
+						Conferencias Ignite, Batalla de StartUps, mesas de negocio, hackaton, feria 
+						tecnológica, artesanal y gastronómica, pagos online para las inscripciones de los asistentes, streaming y mucho más.
+					</p>
+					<p class="padding">
+						¡Te esperamos del 7 al 11 de abril del 2014 en nuestra tierra Lambayecana!
+
+					</p>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="col-md-10 padding-2 col-md-push-6">
+			<div class="row">
+				<div class="col-lg-16 padding-left padding-right">
+					<div class="row bck-theme-dark">
+						<figure class="col-md-6">
+							<img src="images/comision_organizadora_1.jpg" alt="" class="responsive" />
+						</figure>
+						<div class="col-md-10">
+							<p class="padding-left padding-right color-white">
+								Nuestro COREISC está programado del 7 al 11 de abril del 2014, las actividades 
+								académicas como conferencias tanto nacional, internacional e ignites, batalla 
+								de startups, feria tecnológica, artesanal y gastronómica  tendrán lugar en el 
+								campus de nuestra casa de estudios Universidad Nacional Pedro Ruiz Gallo.
+								Pronto estaremos lanzando nuestra página web y diferentes aplicaciones para 
+								llegar al mayor número de personas, todas este software tiene licencias 
+								open source y las podrán encontrar en: https://github.com/XCOREISC  y para 
+								estar al tanto de las principales novedades relacionadas al COREISC pueden 
+								visitarnos en nuestro fan page en facebook: <a href="https://www.facebook.com/XCOREISC">XCOREISC</a> y
+								 en twitter <a href="https://twitter.com/XCOREISC">@XCOREISC</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-16 color-white margin-top">
+					<div class="row padding">
+						<div class="col-md-8 bck-theme-dark padding">
+							<h4 class="text-center">Misión</h4><hr/>
+							<p>Somos miembros de un gran equipo de estudiantes 
+							y profesionales comprometidos y dispuestos a  
+							integrar conocimientos, aptitudes y experiencia 
+							para organizar y ejecutar  un evento holístico.
+							</p>
+						</div>
+						<div class="col-md-8 bck-theme-dark padding">
+							<h4 class="text-center">Visión</h4><hr/>
+							<p>
+								Obtener un COREISC de calidad y ser una excelente 
+								fuente de oportunidades; oportunidades de Negocio, 
+								de Aprendizaje  y  de Reconocimiento para los participantes.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-16 padding">
+					<div class="row bck-theme-dark">
+						<h4 class="text-center color-white"> Equipo Organizador </h4>
+						<div class="col-md-4 col-md-offset-12">
+				            <form action="#" method="get">
+				                <div class="input-group">
+				                    <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
+				                    <input class="form-control" id="system-search" name="q" placeholder="Buscar" required  ng-model="searchMenber">
+				                    <span class="input-group-btn">
+				                        <button class="btn btn-default" ><i class="glyphicon glyphicon-search"></i></button>
+				                    </span>
+				                </div>
+				            </form>
+				        </div>
+						<div class="col-md-16 bck-white margin-top padding">
+				    	 	<table class="table table-list-search">
+				                    <thead>
+				                        <tr>
+				                        	<th>Nº</th>
+				                            <th>Nombre Completo</th>
+				                            <th>Cargo</th>
+				                        </tr>
+				                    </thead>
+				                    <tbody>
+				                        <tr ng-repeat="menber in team | orderBy:'nombre' | filter:searchMenber " ng-init="n = $index+1">
+				                            <td> {{n}} </td>
+				                            <td> {{menber.nombre}} </td>
+				                            <td> {{menber.cargo}} </td>
+				                        </tr>
+				                    </tbody>
+				            </table>   
+						</div>
+					</div>
+				</div>
+				<div id="mapa" class="col-md-16">
+					
+				</div>
+			</div>
+			
+		</div>
+		
+		
+	</div>
+</div>

@@ -1,0 +1,23 @@
+<div class="col-md-2 bck-theme-dark border-right position-fixed second-nav">
+
+	<h2 class="color-white padding-top-2 padding-bottom-2 padding-left-3">{{name}}</h2><hr/>
+	<h3 class="color-white padding-top padding-bottom padding-left-3">Categorias</h3><hr/>
+	<nav class="nav categories">
+		<a ng-repeat="category in categories | orderBy:'anchorText' " href="{{category.href}} " class="display-blog padding text-left">{{category.anchorText}}</a>
+	</nav>
+</div>
+<div class="col-md-14 col-md-push-2 bck-dark">
+	<div class="row">
+		<div class="col-lg-9 padding-2">
+			<figure class="col-lg-16 bck-theme-dark color-white padding-bottom">
+				<img src="http://static.betazeta.com/www.fayerwayer.com/up/2014/01/as1-960x623.jpg" alt="" class="responsive" />
+				<figcaption class="padding">
+					<h4 class="text-center padding-top padding-bottom">Título del post </h4>
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, possimus, sit, iusto, rem magni unde error quia numquam inventore vel provident nobis voluptas expedita. Blanditiis, sapiente eveniet veniam dolores voluptate.</p>
+					<a href="" class="btn bck-theme block-center w60 color-white"> Ver </a>
+				</figcaption>
+			</figure>
+		</div>
+		
+	</div>
+</div>

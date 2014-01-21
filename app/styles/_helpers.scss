@@ -24,6 +24,13 @@
 .responsive {
   max-width: 100%;
 }
+/*********************** TEXT *******************/
+.text-justify{
+  text-align: justify;
+}
+.text-left{
+  text-align: left;
+}
 /************************** WIDTH ***********************/
 .w5 {
   width: 5rem;
@@ -36,6 +43,9 @@
 }
 .w13 {
   width: 13rem;
+}
+.w-center-3{
+  width: percentage(0.33);
 }
 .w60 {
   width: 60%;
@@ -57,12 +67,6 @@
 }
 .bck-opacity {
   background-color: rgba(0,0,0,0.5);
-}
-.bck-theme {
-  background-color: #036;
-}
-.bck-dark {
-  background-color: #444;
 }
 .bck-black {
   background-color: #000;
@@ -123,6 +127,9 @@
 .margin-top-6 {
   margin-top: 6rem;
 }
+.padding-top-xlg {
+  padding-top: 12rem;
+}
 .margin-bottom {
   margin-bottom: 1rem;
 }
@@ -138,6 +145,9 @@
 .padding {
   padding: 1rem;
 }
+.padding-2 {
+  padding: 2rem;
+}
 .padding-small {
   padding: 0.5rem;
 }
@@ -146,6 +156,12 @@
 }
 .padding-left {
   padding-left: 1rem;
+}
+.padding-left-2 {
+  padding-left: 2rem;
+}
+.padding-left-3 {
+  padding-left: 3rem;
 }
 .padding-right {
   padding-right: 1rem;
@@ -327,28 +343,27 @@
   overflow:hidden;
 }
        
-      .view-animate.ng-enter, .view-animate.ng-leave {
-        -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
-        transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
-       
-        display:block;
-        width:100%;
-        border-left:1px solid black;
-       
-        position:absolute;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-        padding:10px;
-      }
-       
-      .view-animate.ng-enter {
-        left:100%;
-      }
-      .view-animate.ng-enter.ng-enter-active {
-        left:0;
-      }
-      .view-animate.ng-leave.ng-leave-active {
-        left:-100%;
-      }
+.view-animate.ng-enter, .view-animate.ng-leave {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s;
+  display:block;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:0;
+}
+.view-animate.ng-enter {
+  left:100%;
+}
+.view-animate.ng-enter.ng-enter-active {
+  left:0;
+}
+.view-animate.ng-leave.ng-leave-active {
+  left:-100%;
+}
+
+
+
